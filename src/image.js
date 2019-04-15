@@ -31,7 +31,7 @@ function generateGradient(username, text, width, height, textLength = null) {
 
   avatar = avatar.replace(/(\$TEXT)/g, text)
 
-  textLength = textLength ? textLength : text.length
+  textLength = textLength ? textLength : Math.max(text.length, 2)
 
   avatar = avatar.replace(/(\$FONTSIZE)/g, (height * 0.9) / textLength)
 
