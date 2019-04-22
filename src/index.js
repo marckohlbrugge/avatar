@@ -13,7 +13,8 @@ module.exports = (req, res) => {
   if (pathname === '/') {
     pathname = Math.random().toString()
   } else {
-    res.setHeader('Cache-Control', 'max-age=2592000, public')
+    // 31557600 seconds = 1 year
+    res.setHeader('Cache-Control', 'max-age=31557600, public')
     res.setHeader('Last-Modified', 'Mon, 03 Jan 2011 17:45:57 GMT')
   }
   let height
