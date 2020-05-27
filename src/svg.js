@@ -5,11 +5,11 @@ module.exports = `<?xml version="1.0" standalone="no"?>
     <defs>
       <linearGradient id="avatar" x1="0" y1="0" x2="1" y2="1">
         <stop offset="0%" stop-color="$FIRST"/>
-        <stop offset="100%" stop-color="$SECOND"/>
+        <stop offset="100%" stop-color="$FIRST"/>
       </linearGradient>
     </defs>
     <rect fill="url(#avatar)" x="0" y="0" width="$WIDTH" height="$HEIGHT"/>
-    <text x="50%" y="50%" alignment-baseline="central" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-family="apple color emoji, sans-serif" font-size="$FONTSIZE" font-weight="bold">$TEXT</text>
+    <text x="50%" y="50%" alignment-baseline="central" dominant-baseline="middle" text-anchor="middle" fill="$SECOND" font-family="apple color emoji, sans-serif" font-size="$FONTSIZE" font-weight="bold">$TEXT</text>
   </g>
 </svg>
 `

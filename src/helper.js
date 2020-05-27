@@ -33,12 +33,9 @@ function hashStringToColor(str) {
 function getMatchingColor(firstColor) {
   let color = firstColor
   if (color.dark()) {
-    color = color.saturate(0.3).rotate(90)
+    color = color.saturate(1).lighten(0.8)
   } else {
-    color = color.desaturate(0.3).rotate(90)
-  }
-  if (shouldChangeColor(color)) {
-    color = color.rotate(-200).saturate(0.5)
+    color = color.saturate(1).darken(0.5)
   }
   return color
 }
