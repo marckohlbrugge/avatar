@@ -32,7 +32,7 @@ function hashStringToColor(str) {
 
 function getMatchingColor(firstColor) {
   let color = firstColor
-  if (color.dark()) {
+  if (color.isDark()) {
     color = color.saturate(1).lighten(0.8)
   } else {
     color = color.saturate(1).darken(0.5)

@@ -4,19 +4,19 @@
   "main": "src/index.js",
   "repository": "tobiaslins/avatar",
   "scripts": {
-    "start": "NODE_ENV=production micro -p ${PORT:-3000}",
+    "start": "NODE_ENV=production micro -l tcp://0.0.0.0:${PORT-3000}",
     "dev": "micro-dev"
   },
   "author": "Tobias Lins <tobias@lins.in>",
   "license": "MIT",
   "dependencies": {
-    "color": "^2.0.0",
-    "micro": "^8.0.1",
-    "sharp": "^0.18.2",
+    "color": "^3.1.2",
+    "micro": "^9.3.4",
+    "sharp": "^0.25.3",
     "url": "^0.11.0"
   },
   "devDependencies": {
-    "micro-dev": "^1.1.0"
+    "micro-dev": "^3.0.0"
   },
   "engines": {
     "node": "11.11.0"
