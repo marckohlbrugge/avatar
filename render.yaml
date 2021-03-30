@@ -1,0 +1,10 @@
+services:
+
+- type: web
+  name: wip-avatars
+  env: node
+  numInstances: 1
+  startCommand: bin/start
+  autoDeploy: true
+  domains:
+  - avatars.wip.co
