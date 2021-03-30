@@ -4,6 +4,7 @@ services:
   name: wip-avatars
   env: node
   numInstances: 1
+  buildCommand: bin/build
   startCommand: bin/start
   autoDeploy: true
   domains:
